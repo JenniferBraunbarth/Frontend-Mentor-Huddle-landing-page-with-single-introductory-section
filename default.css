@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* mobile --------------- */
+@media screen and (max-width: 699px) {
+    body {
+        max-width: 699px;
+        margin: 0 auto;
+    }
+    header {
+        margin-bottom: 60px;
+    }
+    main {
+        flex-direction: column;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    article {
+        margin: 30px 10px;
+        max-width: 550px;
+        text-align: center;
+    }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        line-height: 25px;
+    }
+    button {
+        padding: 10px 80px;
+        margin: 20px auto;
+        border-radius: 55px;
+        color: hsl(257, 40%, 49%);
+        border: 1px solid white;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.70);
+    }
+    button:hover {
+        background-color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+        color: white;
+        cursor: pointer;
+    }
+    footer {
+        gap: 1rem;
+        justify-content: center;
+    }
+    footer i {
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        padding: 7px;
+    }
+    footer i:first-of-type {
+        padding: 7px 10px;
+    }
+    footer i:hover {
+        color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+        cursor: pointer;
+    }
+    .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 50px 50px;
+        background: url("images/bg-mobile.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .flex {
+        display: flex;
+    }
+}
+/* desktop --------------- */
+@media screen and (min-width: 700px) {
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    header {
+        margin-bottom: 60px;
+    }
+    figure {
+        flex-basis: 60%;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    article {
+        flex-basis: 40%;
+        margin: 30px 40px;
+        padding-right: 50px;
+    }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        line-height: 25px;
+    }
+    button {
+        padding: 10px 40px;
+        margin: 20px 0;
+        border-radius: 55px;
+        color: hsl(257, 40%, 49%);
+        border: 1px solid white;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.70);
+    }
+    button:hover {
+        background-color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+        color: white;
+        cursor: pointer;
+    }
+    footer {
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+    footer i {
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        padding: 7px;
+    }
+    footer i:first-of-type {
+        padding: 7px 10px;
+    }
+    footer i:hover {
+        color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+        cursor: pointer;
+    }
+    .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 50px 50px;
+        background: url("images/bg-desktop.svg") center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .flex {
+        display: flex;
+    }
+}
